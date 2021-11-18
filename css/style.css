@@ -1,0 +1,123 @@
+body {
+  color: #A6ADB4;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif, Arial;
+  color: #A6ADB4;
+  line-height: 1.7142857143;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-main {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEDED;
+  color: #202124;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn {
+  color: #FFFFFF;
+  background-color: #FA6980;
+  width: 160px;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  text-align: center;
+  padding: 13px 0px;
+}
+
+.header__inner {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.header__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.morenews__inner {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.morenews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.morenews__item {
+  width: 380px;
+  margin-bottom: 30px;
+}
+.morenews__title {
+  color: #FA6980;
+  font-size: 12px;
+  font-weight: bold;
+}
+.morenews__subtitle {
+  color: #202124;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.morenews__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.trending {
+  background-color: #F6F8F9;
+  padding: 60px 0;
+}
+.trending__inner {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.trending__item {
+  width: 380px;
+}
+.trending__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__body {
+  background-color: #FFFFFF;
+  padding: 35px;
+}
+.card__title {
+  color: #202124;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,1 +1,122 @@
 @charset "utf-8";
+
+
+$color-text:#A6ADB4;
+$color-heading:#202124;
+$color-gray:#F6F8F9;
+$color-accent:#FA6980;
+$color-white:#FFFFFF;
+
+@mixin inner($w:800px) {
+    max-width: $w;
+    width: 90%;
+    margin:0 auto;
+
+}
+@mixin title() {
+    color: $color-heading;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+}
+
+body{
+    color:$color-text;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif,Arial,;
+    color:$color-text;
+    line-height: (24/14);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+// BLOCK------------------------------------------------
+
+.title-main{
+            margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #EBEDED;
+        color:$color-heading;
+        font-size: 24px;
+        font-weight: bold;
+}
+.btn{
+    color: $color-white;
+    background-color: $color-accent;
+    width: 160px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    text-align: center;
+    padding: 13px 0px;
+}
+.header{
+    &__inner{
+        @include inner();
+    }
+    &__all{
+        display: flex;
+    }
+}
+.morenews{
+    &__inner{
+        @include inner();
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 380px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        color: #FA6980;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__subtitle{
+        @include title();
+    }
+    &__date{
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.trending{
+    background-color: $color-gray;
+    padding:60px 0;
+
+    &__inner{
+        @include inner();
+    }
+    &__item{
+        width:380px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+.card{
+    &__body{
+        background-color: $color-white;
+        padding:35px;
+    }
+    &__title{
+      @include title();
+    }
+}
